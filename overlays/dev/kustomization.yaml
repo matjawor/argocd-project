@@ -1,4 +1,7 @@
 bases:
   - ../../base
 
-namePrefix: dev-
+nameSuffix: -dev
+
+commonLabels:
+  app: guestbook-app-dev
