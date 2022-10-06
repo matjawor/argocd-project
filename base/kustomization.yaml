@@ -1,3 +1,6 @@
 resources:
   - resources/deployment.yaml
   - resources/svc.yaml
+
+patchesStrategicMerge:
+  - general_patches/set_memory.yaml

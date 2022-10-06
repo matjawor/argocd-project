@@ -1,5 +1,0 @@
-bases:
-  - ../base
-
-patchesStrategicMerge:
-  - general_patches/set_memory.yaml
