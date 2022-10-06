@@ -4,8 +4,9 @@ metadata:
   name: guestbook-app
 spec:
   template:
-    containers:
-      - name: guestbook-app
-        resources:
-          limits:
-            memory: 512Mi
+    spec:
+      containers:
+        - name: guestbook-app
+          resources:
+            limits:
+              memory: 512Mi
