@@ -3,6 +3,7 @@ resources:
   - resources/svc.yaml
   - resources/ingress.yaml
   - resources/job.yaml
+  - resources/cm.yaml
 
 patchesStrategicMerge:
   - general_patches/set_memory.yaml
