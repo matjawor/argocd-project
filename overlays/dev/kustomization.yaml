@@ -2,6 +2,7 @@ bases:
   - ../../base
 
 nameSuffix: -dev
+namespace: default
 
 commonLabels:
   app: guestbook-app-dev
