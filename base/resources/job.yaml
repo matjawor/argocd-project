@@ -7,6 +7,12 @@ spec:
     spec:
       containers:
         - name: pi
+          env:
+            - name: username
+              valueFrom:
+                configMapKeyRef:
+                  name: argocd-sync-user-dev           # The ConfigMap this value comes from.
+                  key: argo_cd_sync_user # The key to fetch.
           image: perl:5.34.0
           command: ["perl",  "-Mbignum=bpi", "-wle", "print bpi(2000)"]
       restartPolicy: Never
