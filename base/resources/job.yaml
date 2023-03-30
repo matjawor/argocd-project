@@ -14,6 +14,6 @@ spec:
                   name: argocd-sync-user-dev           # The ConfigMap this value comes from.
                   key: argo_cd_sync_user # The key to fetch.
           image: perl:5.34.0
-          command: ["perl",  "-Mbignum=bpi", "-wle", "print bpi(2000)"]
+          command: ["perl",  "-Mbignum=bpi", "-wle", "print bpi(2000) && print $ENV{username}"]
       restartPolicy: Never
   backoffLimit: 4
