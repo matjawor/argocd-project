@@ -2,6 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: argocd-sync-user-dev
+  argocd.argoproj.io/hook: PreSync
   argocd.argoproj.io/sync-wave: "-1"
 data:
   argo_cd_sync_user_timestamp: "unknown"
