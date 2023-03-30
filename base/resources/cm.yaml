@@ -4,7 +4,7 @@ metadata:
   name: argocd-sync-user-dev
   annotations:
     argocd.argoproj.io/hook: PreSync
-    argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
 data:
   argo_cd_sync_user_timestamp: "unknown"
   argo_cd_sync_user: "unknown"
