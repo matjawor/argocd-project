@@ -2,6 +2,9 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: argocd-sync-user-dev
+  annotations:
+    argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
 data:
   argo_cd_sync_user_timestamp: "unknown"
   argo_cd_sync_user: "unknown"
