@@ -3,4 +3,6 @@ kind: ConfigMap
 metadata:
   name: argocd-sync-user-dev
 data:
+  argo_cd_sync_user_timestamp: "unknown"
   argo_cd_sync_user: "unknown"
+  argo_cd_sync_user_git_ref: "unknown"
