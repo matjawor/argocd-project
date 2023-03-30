@@ -24,6 +24,6 @@ spec:
                   name: argocd-sync-user-dev
                   key: argo_cd_sync_user_git_ref
           image: perl:5.34.0
-          command: ["perl",  "-Mbignum=bpi", "-wle", "print user $ENV{USERNAME}\n sync started at $ENV{sync_start_time}\n git_ref $ENV{git_ref}\n bpi(2000)"]
+          command: ["perl",  "-Mbignum=bpi", "-wle", 'print "user $ENV{USERNAME}"']
       restartPolicy: Never
   backoffLimit: 4
